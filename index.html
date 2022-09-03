@@ -1,9 +1,15 @@
 <h1>Hello </h1>
-how are you?
+how are you
+<h2 id='1'></h2>
+<h2 id='2'></h2>
+<h2 id='3'></h2>
 <script>
-  function motion(event){
+   document.getElementById('1').innerText=event.accelerationIncludingGravity.x 
+  document.getElementById('2').innerText=event.accelerationIncludingGravity.y
+  document.getElementById('3').innerText=event.accelerationIncludingGravity.z
+    
   console.log("Accelerometer: "
-    + event.accelerationIncludingGravity.x + ", "
+    ++ ", "
     + event.accelerationIncludingGravity.y + ", "
     + event.accelerationIncludingGravity.z
   );
